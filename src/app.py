@@ -28,6 +28,6 @@ def hello_number(number):
 
 @app.get("/")
 def hello():
-    command = "./scripts/hello_world.py"
+    command = "python ./scripts/hello_world.py"
     result = subprocess.check_output(command, shell=True)
     return result
